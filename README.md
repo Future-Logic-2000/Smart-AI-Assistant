@@ -26,7 +26,7 @@
 
 1. Clone the repository to your local machine:
 2. Do not share your API key with anyone, including other AI models.
-3. Install the required dependencies:pip install customtkinter google-generativeai
+3. Install the required dependencies:  pip install customtkinter google-generativeai
 4. Open the code and set your private API key in the api_key_from_system variable.
 5. Run the application:python main.py
    ```bash
