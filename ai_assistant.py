@@ -18,7 +18,7 @@ class OnlineChatBotApp(ctk.CTk):
         super().__init__()
         
         # إعدادات أبعاد النافذة وعنوانها
-        self.title("Smart AI Assistant (Online)")
+        self.title("Tiny assistant")
         self.geometry("450x600")
         
         # --- تصميم عناصر الواجهة (GUI Widgets) ---
@@ -26,7 +26,7 @@ class OnlineChatBotApp(ctk.CTk):
         # أولاً: عنوان البرنامج في الأعلى
         self.title_label = ctk.CTkLabel(
             self, 
-            text="المساعد الذكي (متصل بالإنترنت)", 
+            text="Tiny assistant is in your service!", 
             font=ctk.CTkFont(family="Segoe UI", size=16, weight="bold")
         )
         self.title_label.pack(pady=15)
@@ -42,7 +42,7 @@ class OnlineChatBotApp(ctk.CTk):
         self.chat_box.configure(state="disabled") # جعله للقراءة فقط حتى لا يمسح المستخدم النصوص بالخطأ
         
         # طباعة رسالة ترحيبية عند فتح البرنامج
-        self.display_message("AI: مرحباً بصديقي المبرمج! أنا مستعد للمساعدة في أي وقت.")
+        self.display_message("AI: Hi programmer! I'm your tiny assistant. Ask me what do you want about programming, and I'll do my best to help you out!")
         
         # ثالثاً: إطار سفلي يجمع صندوق الكتابة وزر الإرسال في سطر واحد
         self.input_frame = ctk.CTkFrame(self, fg_color="transparent")
@@ -51,7 +51,7 @@ class OnlineChatBotApp(ctk.CTk):
         # صندوق إدخال النص (حيث تكتب سؤالك)
         self.entry_box = ctk.CTkEntry(
             self.input_frame, 
-            placeholder_text="اكتب سؤالك هنا...", 
+            placeholder_text="Write your question here...", 
             width=310, 
             font=ctk.CTkFont(family="Segoe UI", size=13)
         )
@@ -63,7 +63,7 @@ class OnlineChatBotApp(ctk.CTk):
         # زر الإرسال الأزرق
         self.send_button = ctk.CTkButton(
             self.input_frame, 
-            text="إرسال", 
+            text="Submit", 
             width=80, 
             command=self.send_message
         )
@@ -97,7 +97,7 @@ class OnlineChatBotApp(ctk.CTk):
             
         except Exception as e:
             # في حال حدوث أي خطأ (مثل انقطاع مفاجئ للإنترنت أو عدم العثور على المفتاح)
-            self.display_message("Error: عذراً، حدث خطأ في الاتصال بالسيرفر. تأكد من جودة الإنترنت وصحة الـ API Key المحفوظ.")
+            self.display_message("Error: Something went wrong while connecting to the AI service. Please check your internet connection and API key.")
 
 # --- 3. تشغيل التطبيق الرسومي ---
 if __name__ == "__main__":
