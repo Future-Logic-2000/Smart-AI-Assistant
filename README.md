@@ -1,18 +1,18 @@
 # Smart AI Assistant 
 
-هذا المشروع هو مساعد ذكي مكتوب بلغة **Python**، يتيح لك التواصل المباشر مع نماذج الذكاء الاصطناعي من جوجل (**Google Gemini API**). تم تصميم هذا البرنامج ليكون أداة مساعدة شخصية سريعة وفعالة.
+A desktop-based AI assistant built with **Python**, powered by the **Google Gemini API**. This project is designed to provide a fast, efficient, and user-friendly interaction with advanced AI models.
 
-## المميزات
-- **واجهة رسومية (GUI):** تصميم عصري وسلس باستخدام مكتبة `CustomTkinter`.
-- **اتصال سحابي:** يعتمد على قوة معالجة جوجل للرد على استفساراتك بدقة عالية.
-- **سهولة التخصيص:** كود مفتوح وسهل التعديل للمطورين المبتدئين.
+## Features
+- **Modern GUI:** Built with `CustomTkinter` for a sleek and responsive user experience.
+- **Cloud-Powered:** Leverages Google's powerful AI models to provide accurate and intelligent responses.
+- **Developer-Friendly:** Clean and modular code structure, making it easy for beginners to customize and extend.
 
-## التقنيات المستخدمة
-- **اللغة:** Python
-- **الذكاء الاصطناعي:** Google Generative AI (Gemini)
-- **الواجهة الرسومية:** CustomTkinter
+## Tech Stack
+- **Language:** Python
+- **AI Engine:** Google Generative AI (Gemini)
+- **GUI Framework:** CustomTkinter
 
-## كيف تبدأ؟
-1. تأكد من تثبيت مكتبات بايثون المطلوبة:
+## Getting Started
+1. **Clone the repository:**
    ```bash
-   pip install customtkinter google-generativeai
+   git clone [https://github.com/YOUR_USERNAME/Smart-AI-Assistant.git](https://github.com/YOUR_USERNAME/Smart-AI-Assistant.git)
