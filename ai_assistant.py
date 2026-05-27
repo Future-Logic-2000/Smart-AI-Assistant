@@ -7,8 +7,18 @@ api_key_from_system = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=api_key_from_system)
 
 # اختيار النموذج السحابي السريع والذكي
-model = genai.GenerativeModel('gemini-2.5-flash')
-
+model = genai.GenerativeModel(
+    model_name='gemini-2.5-flash',
+    system_instruction=(
+        "Your name is 'Tiny assistant'. You are a helpful AI programming assistant. "
+        "You must answer in the same language the user speaks. " 
+        "You can answer questions about programming, provide code snippets, and explain programming concepts. "
+        "If you don't know the answer, say 'I don't know' instead of making up an answer." 
+        "Always be concise and to the point. Avoid unnecessary explanations. "
+        "Focus on providing clear and direct answers to the user's programming questions."
+    )
+)
+    
 # --- 2. إعدادات مظهر الواجهة الرسومية ---
 ctk.set_appearance_mode("dark")       # الوضع المظلم المريح للعين
 ctk.set_default_color_theme("green")    # اللون الأزرق الذكي للأزرار
