@@ -18,7 +18,7 @@ class OnlineChatBotApp(ctk.CTk):
         super().__init__()
         
         # إعدادات أبعاد النافذة وعنوانها
-        self.title("Tiny assistant")
+        self.title("Tiny assistant (Online)")
         self.geometry("450x600")
         
         # --- تصميم عناصر الواجهة (GUI Widgets) ---
